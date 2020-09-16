@@ -1,3 +1,6 @@
+![OpenLogic by Perforce](https://cdn.brandfolder.io/UEOJKODA/at/pwujp1-aw3f3c-1rgw2v/logo-openlogic-tagline.png?width=600&height=189)
+
+
 # Getting Started with OpenLogic CentOS images within Google Cloud
 
 ## Deploying
@@ -30,9 +33,15 @@ TODO - include screenshot(s) showing the project selection info
 
 When you have located the VM instance you wish to log into, make sure it has a green checkmark and click on the VM name.
 
+TODO - include screenshot of the instance page with green checkmark
+
 Under `Details`, there is a `Remote Access` section at the top.  You will see a `SSH` button there.  Clicking that button will transfer the ssh keys to the VM and log you into the VM via a new browser window.  
 
+TODO - include screenshot of the VM instance details page
+
 There is also a drop-down to the right of the SSH button which has other options for accessing the instance.
+
+TODO - include screenshot of the SSH dropdown
 
 If you wish to ssh into the instance from another ssh client, scroll down to the bottom of the VM instance details page and locate the `SSH Keys` section.  This section lists the username(s) and the public portion of the ssh key(s) that are able to log into the instance. 
 
@@ -40,7 +49,7 @@ If you wish to ssh into the instance from another ssh client, scroll down to the
 
 Included with our GCE images is 9x5 email-only support from our team of Tier 4 architects and engineers.  
 
-Please send support requests to support@openlogic.com including your name, email, image name and Cloud Account ID that is running this image.
+Please send support requests to support@openlogic.com including your name, email, CentOS solution name and Cloud Account ID that is running this image.
 
 Silver (12x5) and Gold (24x7) support options are also available. 
 
