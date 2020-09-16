@@ -1,63 +1,49 @@
 # Getting Started with OpenLogic CentOS images within Google Cloud
 
 ## Deploying
+
 Using your web broswer, go to https://console.cloud.google.com/marketplace/partners/zend-integration-public and select the CentOS solution that you wish to deploy.
 
 TODO - include screenshot of the page with our CentOS solutions which are not present as of 200916
 
+Once you have selected the appropriate CentOS version, click `Launch`
 
-Click "Launch on Compute Engine"
+TODO - include screenshot of the page with the Launch button
 
-![](./img/launcherconfig.png)
+You can take the default settings or customize them.  
 
-You can take the default settings or customize them.  When complete click "Deploy"
+Check the `I accept the GCP Marketplace Terms of Service` box.
 
-![](./img/deploying.png)
+When complete click `Deploy`
 
-That's it!  Your cluster is now deploying.
+TODO - include screenshot of the page with the Deploy button
 
-## Inspecting the Cluster
+That's it!  Your VM instance is now being created.
 
-When complete you should see:
+## Logging into the VM
 
-![](./img/deployed.png)
+To view your instances, go to https://console.cloud.google.com/compute/instances
 
-To view OpsCenter, the DataStax admin interface, we will need to create an ssh tunnel.  To do that, copy & paste the black box inside the red oval to your terminal:
+If you cannot see the VM instance that you just launched, make sure you have selected the correct project within your account.
 
-![](./img/tunnel-console.png)
+TODO - include screenshot(s) showing the project selection info
 
-It should look like the following when you run the command:
+When you have located the VM instance you wish to log into, make sure it has a green checkmark and click on the VM name.
 
-![](./img/tunnel.png)
+Under `Details`, there is a `Remote Access` section at the top.  You will see a `SSH` button there.  Clicking that button will transfer the ssh keys to the VM and log you into the VM via a new browser window.  
 
-Now, we can open a web browser to https://localhost:8443 to view OpsCenter.  Before that, grab the OpsCenter "admin" user's password to log into your OpsCenter instance.
+There is also a drop-down to the right of the SSH button which has other options for accessing the instance.
 
-![](./img/creds-opsc.png)
+If you wish to ssh into the instance from another ssh client, scroll down to the bottom of the VM instance details page and locate the `SSH Keys` section.  This section lists the username(s) and the public portion of the ssh key(s) that are able to log into the instance. 
 
-![](./img/opscenter-login.png)
+## Support
 
-![](./img/opscenter-console.png)
+Included with our GCE images is 9x5 email-only support from our team of Tier 4 architects and engineers.  
 
-Great!  You now have a DataStax Enterprise cluster running with 1 node each in Asia, Europe and America regions.
+Please send support requests to support@openlogic.com including your name, email, image name and Cloud Account ID that is running this image.
 
-We can also log into a node to interact with the database.  To do that go back to the Google console and follow the red arrow as shown below to start an ssh session using the "Open in browser window" option.
-
-![](./img/ssh.png)
-
-Then grab your DSE cluster's "cassandra" user's password as shown below:
-
-![](./img/creds-cassandra.png)
-
-Connect to your DSE cluster by running the following cqlsh command:
-
-![](./img/cqlsh.png)
-
-Run a cql command "desc keyspaces" to view the existing keyspaces in your DSE cluster:
-
-![](./img/desc-keyspaces.png)
+Silver (12x5) and Gold (24x7) support options are also available. 
 
 ## Next Steps
 
-If you want to learn more about DataStax Enterprise, the online training courses at https://academy.datastax.com/ are a great place to start.
-
-To learn more about running DataStax Enterprise on GCP take a look at the [best practices guide](bestpractices.md) and [post deploy steps](postdeploy.md).
+If you want to learn more about OpenLogic by Perforce, our Open Source Software support, including CentOS support, visit us at http://www.openlogic.com , email us at info@roguewave.com or call us at +1 800.487.3217
