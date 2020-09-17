@@ -7,11 +7,11 @@
 
 Using your web broswer, go to https://console.cloud.google.com/marketplace/partners/zend-integration-public and select the CentOS solution that you wish to deploy.
 
-TODO - include screenshot of the page with our CentOS solutions which are not present as of 200916
+![](./images/solutions.png)
 
 Once you have selected the appropriate CentOS version, click `Launch`
 
-TODO - include screenshot of the page with the Launch button
+![](./images/solution_chosen.png)
 
 You can take the default settings or customize them.  
 
@@ -19,7 +19,7 @@ Check the `I accept the GCP Marketplace Terms of Service` box.
 
 When complete click `Deploy`
 
-TODO - include screenshot of the page with the Deploy button
+![](./images/deployment.png)
 
 That's it!  Your VM instance is now being created.
 
@@ -29,19 +29,19 @@ To view your instances, go to https://console.cloud.google.com/compute/instances
 
 If you cannot see the VM instance that you just launched, make sure you have selected the correct project within your account.
 
-TODO - include screenshot(s) showing the project selection info
+![](./images/project_select.png)
 
 When you have located the VM instance you wish to log into, make sure it has a green checkmark and click on the VM name.
 
-TODO - include screenshot of the instance page with green checkmark
+![](./images/instance_checkmark.png)
 
 Under `Details`, there is a `Remote Access` section at the top.  You will see a `SSH` button there.  Clicking that button will transfer the ssh keys to the VM and log you into the VM via a new browser window.  
 
-TODO - include screenshot of the VM instance details page
+![](./images/instance_details.png)
 
 There is also a drop-down to the right of the SSH button which has other options for accessing the instance.
 
-TODO - include screenshot of the SSH dropdown
+![](./images/instance_ssh_dropdown.png)
 
 If you wish to ssh into the instance from another ssh client, scroll down to the bottom of the VM instance details page and locate the `SSH Keys` section.  This section lists the username(s) and the public portion of the ssh key(s) that are able to log into the instance. 
 
